@@ -1,0 +1,1210 @@
+/* ------------fonts-start------------*/
+@font-face {
+	font-family: "OpenSans";
+    src:url("../fonts/OpenSans-Bold.ttf");
+    src:url("../fonts/OpenSans-Bold.woff2") format("woff2"),
+        url("../fonts/OpenSans-Bold.woff") format("woff"),
+        url("../fonts/OpenSans-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+	font-family: "OpenSans";
+    src:url("../fonts/OpenSans-Regular.ttf");
+    src:url("../fonts/OpenSans-Regular.woff2") format("woff2"),
+        url("../fonts/OpenSans-Regular.woff") format("woff"),
+        url("../fonts/OpenSans-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+/* ------------fonts-end------------*/
+
+
+/* ----------styles all start------- */
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    color: #000000;
+    font-family: "OpenSans", "Arial", sans-serif;
+    list-style-type: none;
+}
+
+body {
+    position: relative;
+    min-width: 300px;
+}
+/* ----------styles all end------- */
+
+.header-section {
+    position: relative;
+    background-color: #10192a;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.header-section::before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    opacity: 0.6;
+}
+
+.header-section__content {
+    position: relative;
+    z-index: 2;
+}
+
+.header-section__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-section__title {
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.header-section__logo {
+    display: block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../svg/noemi-logo.svg);
+}
+
+._hidden { /* скрываем подпись к лого и остальным подписям */
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    clip: rect(1px, 1px, 1px, 1px);
+}
+
+/* ============= стилизация заголовков h2 START ============= */
+.section-title {
+    font-weight: bold;
+    color: #0f0d0e;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.section-title::after {
+    content: "";
+    display: block;
+    width: 67px;  /* или 65px ??? */
+    height: 3px;
+    margin: 12px auto 24px;
+    background-color: #e1d9bd;  
+}
+/* ============= стилизация заголовков h2 END ============= */
+
+
+/* ----------- Бургер меню ---------- */
+/* ----------- Start ------------*/
+.menu-burger__header {
+    position: relative; /* задаем относительное позиционирование */
+    width: 23px; /* определяем размеры блока */
+    height: 20px;
+    display: block;
+}
+
+.menu-burger__header span, 
+.menu-burger__header::after, 
+.menu-burger__header::before {
+    height: 3px;
+    width: 100%;
+    position: absolute;
+    background: #ffffff;
+    margin: 0 auto;
+}
+
+.menu-burger__header span{
+    top: 8px;
+}
+
+.menu-burger__header:after, .menu-burger__header:before{
+    content: '';
+}
+
+.menu-burger__header:after{
+    bottom: 0px;
+}
+.menu-burger__header:before{
+    top: 0px;
+}
+/* ----------- Burger Stop ------------*/
+
+
+/* ----------- Section trends-start ------------*/
+.trends-section__articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#trends-section__article-1 {
+	background-image: url("../img/trend1.jpg");
+}
+
+#trends-section__article-2 {
+	background-image: url("../img/trend2.jpg");
+}
+
+#trends-section__article-3 {
+	background-image: url("../img/trend3.jpg");
+}
+
+#trends-section__article-4 {
+	background-image: url("../img/trend4.jpg");
+}
+
+.trends-section__article {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    /* height: 100%; */
+    padding-bottom: 15px;
+    background-color: #606260;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.trends-section__article::before {  
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    opacity: 0.6;
+}
+
+.trends-section__article-substance {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    border: 4px solid #b59f5b;
+}
+
+.article-categories {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.article-categories-item:nth-child(n+2) {
+    margin-left: 19px;
+}
+
+.article-tag-link {
+    color: #b59f5b;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.article-tag-link:hover {
+    text-decoration: underline;
+}
+
+.article-title-wrapper-link {
+    margin-top: 14px;
+    text-decoration: none;
+}
+
+.trends-section__article-title {
+    color: #ffffff;
+}
+
+.article-title {
+    max-width: 360px;
+    font-size: 16px;
+    line-height: 1.25;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.article-title:hover {
+    color:#b59f5b;
+}
+
+/* ----------- Section trends-stop ------------*/
+
+
+/***************** MAIN-START *****************/
+.image {
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+    height: auto;
+}
+
+.expanded-article__info {
+    font-size: 12px;
+}
+
+.expanded-article__date {
+    margin-right: 15px;
+    color: #888888;
+}
+
+.expanded-article__author {
+    font-weight: bold;
+}
+
+.expanded-article__categories {
+    margin-bottom: 16px;
+}
+/***************** MAIN-END *****************/
+
+
+/* ++++++++++++++ ASIDE-START ++++++++++++++ */
+.latest-posts-section__post:nth-child(n+2) {
+    margin-top: 22px;
+}
+
+.minimized-article {
+    display: flex;
+}
+
+.minimized-article__image-wrapper {
+    flex: 0 0 70px;
+    height: 70px;
+    margin-right: 19px;
+}
+
+.minimized-article__content {
+    flex: 1 1;
+}
+
+.minimized-article__date {
+    font-size: 12px;
+    opacity: 0.54;
+    vertical-align: top;
+}
+
+.minimized-article__title {
+    font-size: 14px;
+    line-height: 1.286; /* 18 / 14px   (14- размер шрифта, 18-междустрочный из макета) */
+    font-weight: bold;
+}
+
+.search-section__form {
+    display: flex;
+}
+
+.input-field {
+    height: 48px;
+    padding-left: 19px;
+    padding-right: 19px;
+    border: 0;
+    border-radius: 0;
+    background-color: #f4f7f6;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+.input-field:focus {
+	outline: #b59f5b solid 2px;
+	outline-offset: -2px;
+}
+
+.search-section__field {
+    flex: 1 1 222px; /* даём элементу гибкость, до ширины = 222px*/
+}
+
+.input-field::placeholder {
+	font-size: 13px;
+	opacity: 0.54;
+}
+
+.button {
+    height: 48px;
+    border: 0;
+    border-radius: 0;
+    background-color: #b59f5b;
+}
+
+.search-section__button {
+    flex: 0 0 48px;
+    background-repeat: no-repeat;
+    background-image: url(../svg/search.svg);
+    background-size: 18px 18px;
+    background-position: center center;
+}
+
+.subscribe-section__field {
+    width: 100%;
+}
+
+.subscribe-section__button {
+    width: 100%;
+    margin-top: 18px;
+}
+
+.button:hover {
+    background-color: #323232;
+}
+
+.button-text {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.categories-section__categories {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.categories-section__category {
+    height: 30px;
+    margin-right: 5px;
+    margin-bottom: 6px;
+}
+
+.categories-section__category-button {
+    display: flex;
+    height: 100%;
+    padding: 8px 14px;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #ededed;
+    text-decoration: none;
+}
+
+.categories-section__category-button:hover {
+    border-color: #b59f5b;
+}
+
+.categories-section__category-text {
+    font-size: 12px;
+    font-weight: bold;
+    color: #0f0d0e;
+    text-transform: uppercase;
+}
+
+.topics-section__topic {
+    margin-bottom: 17px;
+}
+
+.topics-section__text {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.topics-section__text:hover {
+    color:#b59f5b;
+}
+
+.topics-section__number {
+    vertical-align: super;
+    font-size: 12px;
+    font-weight: bold;
+    color: #b59f5b;
+}
+
+.topics-section__topic::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    margin-top: 17px;
+    background-color: #eeeeee;
+}
+
+/* ++++++++++++++ ASIDE-END ++++++++++++++ */
+
+
+/***************** SHOP-START *****************/
+.shop-section__goods-item {
+    position: relative;
+    padding: 0 23px;
+}
+
+.shop-section__goods-item::after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    right: -4px;
+    bottom: -4px;
+    left: -4px;
+    display: block;
+    border: 4px solid #d3c59d;
+}
+
+.product__content {
+    position: relative;
+    margin-top: 24px;
+    z-index: 2;  
+}
+
+.product__title {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #0f0d0e;
+}
+
+.product__text {
+    margin-top: 16px;
+    font-size: 15px;
+    line-height: 1.467;
+    color: #0f0d0e;
+}
+
+.product__text-link {
+    text-decoration: none;
+    color: #b59f5b;
+}
+
+.product__text-link:hover {
+    text-decoration: underline;
+}
+
+.product__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 26px;
+}
+
+.product__prices {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+}
+
+.product__old-price {
+    font-size: 14px;
+    text-decoration: line-through;
+}
+
+.product__new-price {
+    font-size: 20px;
+}
+
+.product__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    height: 49px;
+    background-color: #b59f5b;
+    text-decoration: none;
+}
+
+.product__button:hover {
+    background-color: #323232;
+}
+
+.product__button-text {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.product__content::after {
+    content: "";     /* т.к. рамка задана с абсолютным позиционированием, */
+    display: block;  /* то margin-bottom будет проваливаться сквозь рамку, */
+    height: 25px;    /* поэтому, этот элемент поможет создать отступ */
+}
+/***************** SHOP-END *****************/
+
+
+/*+++++++++++++++ FOOTER-START +++++++++++++++*/
+.social-section {
+    background-color: #f4f7f6;
+}
+
+.social-section__networks {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.social-section__network:nth-child(n+2) {
+    margin-left: 28px;
+}
+
+.social-section__network-icon {
+    width: 21px;
+    height: 21px;
+}
+
+.copyright-section__text {
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    color: #999999;
+}
+/*+++++++++++++++ FOOTER-END +++++++++++++++*/
+
+
+/**** Popup START ****/
+.feedback-section {
+    position: fixed;
+    z-index: 4;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.feedback-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.6;
+    background-color: #000000;
+}
+
+.feedback-section__window {
+    position: absolute;
+    background-color: #ffffff;
+}
+
+.feedback-section__close-button {
+    position: absolute;
+    right: 0;
+}
+
+.feedback-section__text {
+    margin-top: 33px;
+    margin-bottom: 11px;
+}
+
+.feedback-section__text, .feedback-section__opinion, .feedback-section__radio-label {
+    font-size: 13px;
+}
+
+.feedback-section__select-user-frequency {
+    width: 100%;
+    background-position: center right 14px;
+    background-repeat: no-repeat;
+    background-size: 12px;
+    background-image: url(../svg/form-arrows.svg);
+}
+
+.feedback-section__radio-label {
+    margin-right: 15px;
+    vertical-align: middle;
+}
+
+.feedback-section__radio-label::before {
+    content: "";
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    margin-right: 3px;
+    vertical-align: middle;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../svg/form-empty-circle.svg);
+}
+
+.feedback-section__radio:checked + .feedback-section__radio-label::before {
+    background-image: url(../svg/form-circle.svg);
+}
+
+.feedback-section__opinion {
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 131px;
+    max-height: 131px;
+    padding-top: 19px;
+}
+
+.feedback-section__submit-button {
+    width: 100%;
+    margin-top: 26px;
+}
+/**** Popup END ****/
+
+
+/* ========== Mobile-start======== */
+@media screen and (max-width: 640px) {
+    .trends-section, 
+    .posts-section, 
+    .aside-bar__section, 
+    .shop-section, 
+    .site-footer {
+        margin-top: 44px;
+    }
+
+    .header-section {
+        background-image: url(../img/banner-mobile.jpg);
+    }
+
+    .header-section__content {
+        padding-top: 32px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 60.555vw;
+    }
+
+    .header-section__top {
+        height: 70.833vw;  /* 255/360 = 0.70833 (255-высота по макету) */
+        flex-direction: column-reverse;
+    }
+
+    .header-section__logo {
+        width: 74.722vw;
+        height: 16.388vw;
+    }
+
+    .header-section__menu {
+        width: 23px;
+        height: 20px;
+        align-self: flex-end;
+    }
+
+    .header-section__menu-list-container_hidden {
+        display: none;
+    }
+
+    .header-section__title-wrapper {
+        margin: 45px auto 0;
+    }
+
+    .header-section__title {
+        font-size: 7.222vw; /* 26/360 = 0.07222 */
+	    line-height: 1.385; /* 36/26 = 1.385 */
+    }
+
+    .section-title {  
+        font-size: 16px; /* для всех h2 заголовков*/
+    }
+
+    /* ----------- Section trends-start ------------*/
+    .trends-section__articles-item {
+        flex-basis: 100%;
+        margin-bottom: 3px;
+    }
+
+    .trends-section__article {
+        min-height: 231px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .trends-section__article-substance {
+        padding: 30px 19px
+    }
+    /* ----------- Section trends-end ------------*/
+
+
+    /***************** MAIN-START *****************/
+    .content {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .posts-section__post {
+        margin-bottom: 25px;
+    }
+
+    .expanded-article__content {
+        margin-top: 16px;
+    }
+
+    .expanded-article__info {
+        margin-top: 25px;
+        margin-bottom: 23px;
+    }
+
+    .posts-section__post:nth-child(n+2):before {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 3px;
+        margin-bottom: 35px;
+        background-color: #eeeeee;
+    }
+    /***************** MAIN-END *****************/
+
+
+    /***************** SHOP-START *****************/
+    .shop-section__goods-item {
+        margin-bottom: 25px;
+    }
+
+    .shop-section__goods-item::after {
+        top: 70vw;
+    }
+
+    .product__title {
+        font-size: 17px;
+        line-height: 1.3;
+    }
+    /***************** SHOP-END *****************/
+
+
+    /*+++++++++++++++ FOOTER-START +++++++++++++++*/
+    .copyright-section {
+        padding-top: 49px;
+        padding-bottom: 46px;
+    }
+    /*+++++++++++++++ FOOTER-END +++++++++++++++*/
+
+
+    /**** Popup START ****/
+    .feedback-section__window {
+        min-width: 330px;
+        width: calc(100vw - 10%);
+        max-width: 390px;
+        padding: 30px 24px;
+    }
+
+    .feedback-section__close-button {
+        top: -33px;
+        width: 27px;
+        height: 27px;
+    }
+
+    .feedback-section__title {
+        font-size: 16px;
+    }
+    /**** Popup END ****/
+
+}
+/* ========== Mobile-end======== */
+
+
+/* ========== Tablet-start======== */
+
+@media screen and (min-width: 641px) and (max-width: 1200px) {
+    .header-section {
+        background-image: url(../img/banner-bg-tablet.jpg);
+    }
+
+    .trends-section, 
+    .union, 
+    .shop-section, 
+    .site-footer {
+        margin-top: 50px;
+    }
+
+    .header-section__content {
+        padding-bottom: 125px;
+        padding-left: 35px;
+        padding-right: 35px;
+        padding-top: 43px;
+    }
+
+    .header-section__logo {
+        width: 157px;
+        height: 40px;
+    }
+
+    .header-section__menu-list-container_hidden {
+        display: none;
+    }
+
+    .header-section__title-wrapper {
+        width: 100%;
+        max-width: 640px;
+        margin: 104px auto 0;
+    }
+
+    .header-section__title {
+        font-size: 40px;
+    }
+
+/* ----------- Section TRENDS-START ------------*/
+
+    .section-title {
+        font-size: 18px;
+    }
+
+    .trends-section__articles-item {
+        flex-basis: calc(50% - 2px);
+        margin-bottom: 3px;
+    }
+
+    .trends-section__article {
+        min-height: 247px;
+        padding-left: 19px;
+        padding-right: 19px;
+    }
+
+    .trends-section__article-substance {
+        padding: 35px 30px 33px;
+    }
+
+    .trends-section__article-title {
+        font-size: 17px;
+    }
+/* ----------- Section TRENDS-END ------------*/
+
+/***************** MAIN-START *****************/
+
+    .union {
+        display: flex;
+        justify-content: center;
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+
+    .main-bar {
+        flex: 0 1 392px; 
+        margin-right: 35px;
+    }
+
+    .posts-section__post {
+        margin-bottom: 23px;
+    }
+
+    .expanded-article__content {
+        margin-top: 16px;
+    }
+
+    .expanded-article__info {
+        margin-top: 39px;
+        margin-bottom: 36px;
+    }
+
+    .posts-section__post:nth-child(n+2):before {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 3px;
+        margin-bottom: 31px;
+        background-color: #eeeeee;
+    }
+
+    .expanded-article__text {
+        font-size: 15px;
+        line-height: 1.466;
+    }
+/***************** MAIN-END *****************/
+
+
+/***************** ASIDE-START *****************/
+    .aside-bar {
+        flex: 0 0 271px;
+    }
+
+    .aside-bar__section:nth-child(n+2) {
+        margin-top: 60px;
+    }
+
+    .section-title_aside {
+        font-size: 14px;
+    }
+/***************** ASIDE-END *****************/
+
+/***************** SHOP-START *****************/
+    .content {
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+
+    .shop-section__goods {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .section-title {
+        font-size: 18px;
+    }
+
+    .shop-section__goods-item {
+        flex: 0 1 calc(50% - 11px);
+        margin-bottom: 28px;
+    }
+
+    .shop-section__goods-item::after {
+        top: 24.479vw; /* 188 / 768 (188 расстояние от верхнего края блока, до рамки по макету*/
+    }
+
+    .product__title {
+        font-size: 17px;
+        line-height: 1.3;
+    }
+    /***************** SHOP-END *****************/
+
+    /*+++++++++++++++ FOOTER-START +++++++++++++++*/
+    .copyright-section {
+        padding-top: 50px;
+        padding-bottom: 37px;
+    }
+    /*+++++++++++++++ FOOTER-END +++++++++++++++*/
+
+
+    /**** Popup START ****/
+    .feedback-section__window {
+        width: 390px;
+        padding: 55px 30px;
+    }
+
+    .feedback-section__close-button {
+        top: -37px;
+        width: 27px;
+        height: 27px;
+    }
+
+    .feedback-section__title {
+        font-size: 18px;
+    }
+    /**** Popup END ****/
+} 
+
+
+@media (min-width:641px) and (max-width: 767px) {  
+    .header-section__title {
+        font-size: 5.208vw; /*  40*100/768 (40-по макету)  */
+        line-height: 1.375; /* 55 / 40 (55-по макету) */
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1000px) {
+    .trends-section__articles-item {
+        flex-basis: calc(25% - 3px);
+    }
+}
+
+/* ========== Tablet-end======== */
+
+
+/* ========== Desktop-start======== */
+
+@media screen and (min-width: 1201px) {
+    .header-section {
+        background-image: url(../img/banner-bg.jpg);
+    }
+
+    .trends-section, 
+    .union, 
+    .shop-section, 
+    .site-footer {
+        margin-top: 64px;
+    }
+
+    .header-section__content {
+        padding-top: 28px;
+        padding-bottom: 145px;
+        padding-left: 15px;
+        padding-right: 15px;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .content {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .header-section__logo {
+        width: 180px;
+        height: 40px;
+    }
+
+    .menu-burger__header {
+        display: none;
+    }
+
+    .header-section__menu-list {
+        display: flex;
+        width: 466px;
+        justify-content: space-between;
+    }
+
+    .header-section__menu-item-link {
+        font-weight: normal;
+        color: #ffffff;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 13px;
+    }
+    
+    .header-section__menu-item-link:hover {
+        text-decoration: underline;
+    }
+
+    .header-section__title-wrapper {
+        width: 720px;
+        margin: 127px auto 0;  
+    }
+    
+    .header-section__title {
+        font-size: 45px;
+        line-height: 1.667;
+    }
+
+    /* ----------- Section TRENDS-START ------------*/
+
+    .trends-section {
+        max-width: 1660px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .section-title {
+        font-size: 20px;
+    }
+
+    .trends-section__articles-item {
+        flex-basis: calc(25% - 3px);
+    }
+
+    .trends-section__article {
+        min-height: 320px;
+        padding-left: 22px; /* или 20px, тут нужно подгонять по ПП */
+        padding-right: 22px;
+    }
+
+    .trends-section__article-substance {
+        padding: 38px 31px 36px;
+    }
+
+    .trends-section__article-title {
+        font-size: 20px;
+    }
+
+    /* ----------- Section TRENDS-END ------------*/
+
+
+    /***************** MAIN-START *****************/
+    .union {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .main-bar {
+        width: 770px;
+    }
+
+    .posts-section__post:nth-child(n+2) {
+        margin-top: 59px;
+    }
+
+    .expanded-article {
+        display: flex;
+    }
+
+    .expanded-article__image-wrapper {
+        width: 380px;
+        height: 294px;
+        margin-right: 30px;
+    }
+
+    .expanded-article__content {
+        width: 380px;
+    }
+
+    .expanded-article__title {
+        font-size: 20px;
+    }
+
+    .expanded-article__info {
+        margin-top: 38px;
+    }
+
+    .expanded-article__text {
+        margin-top: 58px;
+        font-size: 15px;
+        line-height: 1.467;
+    }
+    /***************** MAIN-END *****************/
+
+
+    /*--------------- ASIDE-START ---------------*/
+    .aside-bar {
+        width: 271px;
+    }
+
+    .section-title_aside {
+        font-size: 14px;
+    }
+
+    .aside-bar__section:nth-child(n+2) {
+        margin-top: 60px;
+    }
+    /*--------------- ASIDE-END ---------------*/
+
+
+    /***************** SHOP-START *****************/
+    .section-title {
+        font-size: 20px;
+    }
+
+    .shop-section__goods {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .shop-section__goods-item {
+        flex: 0 1 calc(33% - 43px);
+    }
+
+    .shop-section__goods-item::after {
+        top: 173px;
+    }
+
+    .product__title {
+        font-size: 20px;
+        line-height: 1.2;
+    }
+    /***************** SHOP-END *****************/
+
+
+    /*+++++++++++++++ FOOTER-START +++++++++++++++*/
+    .copyright-section {
+        padding-top: 74px;
+        padding-bottom: 44px;
+    }
+    /*+++++++++++++++ FOOTER-END +++++++++++++++*/
+
+
+    /**** Popup START ****/
+    .feedback-section__window {
+        width: 390px;
+        padding: 55px 30px;
+    }
+
+    .feedback-section__close-button {
+        top: -27px;
+        width: 20px;
+        height: 20px;
+    }
+
+    .section-title {
+        font-size: 20px;
+    }
+    /**** Popup END ****/
+}
+/* ========== Desktop-end======== */
+
+
+  
