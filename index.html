@@ -18,11 +18,9 @@
 			<h2 class="popup__title section-title">
 				Ваш фидбек
 			</h2>
-				<form action="">
+				<form action="#0">
 				<label for="popup__select-user-frequency">
-					<p class="popup__text">
-						Как часто вы заходите на сайт?
-					</p>
+					<p class="popup__text">Как часто вы заходите на сайт?</p>
 				</label>
 				<select class="popup__select-user-frequency input-field" name="user-frequency" id="popup__select-user-frequency">
 					<option value="1">
@@ -219,6 +217,9 @@
 
 		<main class="main-bar">
 			<section class="posts-section">
+				<h2 class="_hidden">
+					Лучшие посты
+				</h2>
 				<ul class="posts-section__posts ">
 					<li class="posts-section__post">
 						<article class="posts-section__article expanded-article">
@@ -247,12 +248,8 @@
 										</h3>
 									</a>
 									<div class="expanded-article__info">
-										<time class="expanded-article__date">
-											10 июня 2019
-										</time>
-										<span class="expanded-article__author">
-											Неизвестный автор
-										</span>
+										<time class="expanded-article__date" datatime="2019-06-10">10 июня 2019</time>
+										<address class="expanded-article__author">Неизвестный автор</address>
 									</div>
 								</header>
 								<div class="expanded-article__text">
@@ -290,12 +287,8 @@
 										</h3>
 									</a>
 									<div class="expanded-article__info">
-										<time class="expanded-article__date">
-											10 июня 2019
-										</time>
-										<span class="expanded-article__author">
-											Неизвестный автор
-										</span>
+										<time class="expanded-article__date" datatime="2019-06-10">10 июня 2019</time>
+										<address class="expanded-article__author">Неизвестный автор</address>
 									</div>
 								</header>
 								<div class="expanded-article__text">
@@ -328,12 +321,8 @@
 										</h3>
 									</a>
 									<div class="expanded-article__info">
-										<time class="expanded-article__date">
-											10 июня 2019
-										</time>
-										<span class="expanded-article__author">
-											Неизвестный автор
-										</span>
+										<time class="expanded-article__date" datatime="2019-06-10">10 июня 2019</time>
+										<address class="expanded-article__author">Неизвестный автор</address>
 									</div>
 								</header>
 								<div class="expanded-article__text">
@@ -374,12 +363,8 @@
 										</h3>
 									</a>
 									<div class="expanded-article__info">
-										<time class="expanded-article__date">
-											10 июня 2019
-										</time>
-										<span class="expanded-article__author">
-											Неизвестный автор
-										</span>
+										<time class="expanded-article__date" datatime="2019-06-10">10 июня 2019</time>
+										<address class="expanded-article__author">Неизвестный автор</address>
 									</div>
 								</header>
 								<div class="expanded-article__text">
@@ -422,12 +407,8 @@
 										</h3>
 									</a>
 									<div class="expanded-article__info">
-										<time class="expanded-article__date">
-											10 июня 2019
-										</time>
-										<span class="expanded-article__author">
-											Неизвестный автор
-										</span>
+										<time class="expanded-article__date" datatime="2019-06-10">10 июня 2019</time>
+										<address class="expanded-article__author">Неизвестный автор</address>
 									</div>
 								</header>
 								<div class="expanded-article__text">
@@ -455,7 +436,7 @@
 							</div>
 							<div class="minimized-article__content">
 								<div class="minimized-article__info">
-									<time class="minimized-article__date">
+									<time class="minimized-article__date" datatime="2019-06-14">
 										14 июня 2019
 									</time>
 								</div>			
@@ -472,7 +453,7 @@
 							</div>
 							<div class="minimized-article__content">
 								<div class="minimized-article__info">
-									<time class="minimized-article__date">
+									<time class="minimized-article__date" datatime="2019-06-14">
 										14 июня 2019
 									</time>
 								</div>
@@ -489,7 +470,7 @@
 							</div>
 							<div class="minimized-article__content">
 								<div class="minimized-article__info">
-									<time class="minimized-article__date">
+									<time class="minimized-article__date" datatime="2019-06-14">
 										14 июня 2019
 									</time>
 								</div>
@@ -507,7 +488,7 @@
 							</div>
 							<div class="minimized-article__content">
 								<div class="minimized-article__info">
-									<time class="minimized-article__date">
+									<time class="minimized-article__date" datatime="2019-06-14">
 										14 июня 2019
 									</time>
 								</div>
@@ -524,7 +505,7 @@
 							</div>
 							<div class="minimized-article__content">
 								<div class="minimized-article__info">
-									<time class="minimized-article__date">
+									<time class="minimized-article__date" datatime="2019-06-14">
 										14 июня 2019
 									</time>
 								</div>
@@ -550,7 +531,7 @@
 						Рассылка
 					</h2>
 				</label>
-				<form class="subscribe-section__form" action="">
+				<form class="subscribe-section__form" action="#0">
 					<input class="subscribe-section__field aside-bar__form-field input-field" id="subscribe-section__field" type="email" placeholder="Ваш email-адрес" name="email" required>
 					<button class="subscribe-section__button button" type="submit">
 						<span class="subscribe-section__button-text button-text">
@@ -560,9 +541,7 @@
 				</form>
 			</section>
 			<section class="categories-section aside-bar__section">
-				<h2 class="categories-section__title section-title section-title_aside">
-					Теги
-				</h2>	
+				<h2 class="categories-section__title section-title section-title_aside">Теги</h2>	
 				<ul class="categories-section__categories ">
 					<li class="categories-section__category">
 						<a class="categories-section__category-button" href="#0">
@@ -700,134 +679,131 @@
 		</h2>
 		<ul class="shop-section__goods ">
 			<li class="shop-section__goods-item">
-				<article class="shop-section__product product">
-					<div class="product__image-wrapper">
-						<picture>
-							<source media="(max-width: 640px)" srcset="img/shop-item-mobile1.jpg">
-							<source media="(min-width: 641px) and (max-width:g1200px)" srcset="img/shop-item-tablet1.jpg">
-							<source media="(min-width: 1201px)" srcset="img/shop-item-desk1.jpg">
-							<img class="product__image image" src="img/shop-item-desk1.jpg" alt="Подушка с принтом">
-						</picture>
-					</div>
-					<div class="product__content">
-						<header class="product__title">
-							Подушка на диван
-						</header>
-						<p class="product__text">
-							Набор из двух подушек с модными принтами. Видео о создании 
-							<a class="product__text-link" href="#0">
-								здесь
-					 	</a>
-						</p>
-						<footer class="product__footer">
-							<div class="product__prices">
-								<span class="product__old-price">
-									1000 ₽
-								</span>
-								<span class="product__new-price">
-									800 ₽
-								</span>
-							</div>
-							<a class="product__button" href="#0">
-								<span class="product__button-text">
-									в магазин
-								</span>
-							</a>
-						</footer>
-					</div>
-				</article>
+				<div class="product__image-wrapper">
+					<picture>
+						<source media="(max-width: 640px)" srcset="img/shop-item-mobile1.jpg">
+						<source media="(min-width: 641px) and (max-width:1200px)" srcset="img/shop-item-tablet1.jpg">
+						<source media="(min-width: 1201px)" srcset="img/shop-item-desk1.jpg">
+						<img class="product__image image" src="img/shop-item-desk1.jpg" alt="Подушка с принтом">
+					</picture>
+				</div>
+				<div class="product__content">
+					<header class="product__title">
+						Подушка на диван
+					</header>
+					<p class="product__text">
+						Набор из двух подушек с модными принтами. Видео о создании 
+						<a class="product__text-link" href="#0">
+							здесь
+					</a>
+					</p>
+					<footer class="product__footer">
+						<div class="product__prices">
+							<span class="product__old-price">
+								1000 ₽
+							</span>
+							<span class="product__new-price">
+								800 ₽
+							</span>
+						</div>
+						<a class="product__button" href="#0">
+							<span class="product__button-text">
+								в магазин
+							</span>
+						</a>
+					</footer>
+				</div>			
 			</li>
 
 			<li class="shop-section__goods-item">
-				<article class="shop-section__product product">
-					<div class="product__image-wrapper">
-						<picture>
-							<source media="(max-width: 640px)" srcset="img/shop-item-mobile2.jpg">
-							<source media="(min-width: 641px) and (max-width: 1200px)" srcset="img/shop-item-tablet2.jpg">
-							<source media="(min-width: 1201px)" srcset="img/shop-item-desk2.jpg">
-							<img class="product__image image" src="img/shop-item-desk2.jpg" alt="Кукла в виде зайчика">
-						</picture>
-					</div>
+				<div class="product__image-wrapper">
+					<picture>
+						<source media="(max-width: 640px)" srcset="img/shop-item-mobile2.jpg">
+						<source media="(min-width: 641px) and (max-width: 1200px)" srcset="img/shop-item-tablet2.jpg">
+						<source media="(min-width: 1201px)" srcset="img/shop-item-desk2.jpg">
+						<img class="product__image image" src="img/shop-item-desk2.jpg" alt="Кукла в виде зайчика">
+					</picture>
+				</div>
 
-					<div class="product__content">
-						<header class="product__title">
-							Кукла «Зайчик»
-						</header>
+				<div class="product__content">
+					<header class="product__title">
+						Кукла «Зайчик»
+					</header>
 
-						<p class="product__text">
-							Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена
-							<a class="product__text-link" href="#0">
-								весенняя серия постов
-							</a>
-							в блоге и несколько подкастов.
-						</p>
+					<p class="product__text">
+						Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена
+						<a class="product__text-link" href="#0">
+							весенняя серия постов
+						</a>
+						в блоге и несколько подкастов.
+					</p>
 
-						<footer class="product__footer">
-							<div class="product__prices">
-								<span class="product__old-price">
-								</span>
-								<span class="product__new-price">
-									3500 ₽
-								</span>
-							</div>
+					<footer class="product__footer">
+						<div class="product__prices">
+							<span class="product__old-price">
+							</span>
+							<span class="product__new-price">
+								3500 ₽
+							</span>
+						</div>
 
-							<a class="product__button" href="#0">
-								<span class="product__button-text">
-									в магазин
-								</span>
-							</a>
-						</footer>
-					</div>
-				</article>
+						<a class="product__button" href="#0">
+							<span class="product__button-text">
+								в магазин
+							</span>
+						</a>
+					</footer>
+				</div>			
 			</li>		
 
-			<li class="shop-section__goods-item">
-				<article class="shop-section__product product">
-					<div class="product__image-wrapper">
-						<picture>
-							<source media="(max-width: 640px)" srcset="img/shop-item-mobile3.jpg">
-							<source media="(min-width: 641px) and (max-width: 1200px)" srcset="img/shop-item-tablet3.jpg">
-							<source media="(min-width: 1201px)" srcset="img/shop-item-desk3.jpg">
-							<img class="product__image image" src="img/shop-item-desk3.jpg" alt="Шестиугольная рамка из дерева">
-						</picture>
-					</div>
+			<li class="shop-section__goods-item">				
+				<div class="product__image-wrapper">
+					<picture>
+						<source media="(max-width: 640px)" srcset="img/shop-item-mobile3.jpg">
+						<source media="(min-width: 641px) and (max-width: 1200px)" srcset="img/shop-item-tablet3.jpg">
+						<source media="(min-width: 1201px)" srcset="img/shop-item-desk3.jpg">
+						<img class="product__image image" src="img/shop-item-desk3.jpg" alt="Шестиугольная рамка из дерева">
+					</picture>
+				</div>
 
-					<div class="product__content">
-						<header class="product__title">
-							Шестиугольная рамка
-						</header>
+				<div class="product__content">
+					<header class="product__title">
+						Шестиугольная рамка
+					</header>
 
-						<p class="product__text">
-							Необычная рамка для украшения дома из видео
-							<a class="product__text-link" href="#0">
-								«Как сделать рамку из подручных средств за 30 минут» 
-							</a>
-						</p>
+					<p class="product__text">
+						Необычная рамка для украшения дома из видео
+						<a class="product__text-link" href="#0">
+							«Как сделать рамку из подручных средств за 30 минут» 
+						</a>
+					</p>
 
-						<footer class="product__footer">
-							<div class="product__prices">
-								<span class="product__old-price">
-									500 ₽
-								</span>
-								<span class="product__new-price">
-									400 ₽
-								</span>
-							</div>
+					<footer class="product__footer">
+						<div class="product__prices">
+							<span class="product__old-price">
+								500 ₽
+							</span>
+							<span class="product__new-price">
+								400 ₽
+							</span>
+						</div>
 
-							<a class="product__button" href="#0">
-								<span class="product__button-text">
-									в магазин
-								</span>
-							</a>
-						</footer>
-					</div>
-				</article>
+						<a class="product__button" href="#0">
+							<span class="product__button-text">
+								в магазин
+							</span>
+						</a>
+					</footer>
+				</div>			
 			</li>
 		</ul>
 	</section>
 
 	<footer class="site-footer content">
 		<section class="social-section">
+			<h2 class="_hidden">
+				Социальные сети
+			</h2>
 			<ul class="social-section__networks">
 				<li class="social-section__network">
 					<a class="social-section__network-link" href="#0">
@@ -843,7 +819,7 @@
 
 				<li class="social-section__network">
 					<a class="social-section__network-link" href="#0">
-						<svg class="social-section__network-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+						<svg class="social-section__network-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 							viewBox="0 0 310.05 310.05" style="enable-background:new 0 0 310.05 310.05;" xml:space="preserve">
 						<g id="XMLID_798_">
 							<path id="XMLID_799_" d="M245.265,31.772C223.923,11.284,194.388,0,162.101,0c-49.32,0-79.654,20.217-96.416,37.176
@@ -856,14 +832,14 @@
 								c-2.717,11.512-18.865,79.953-21.928,92.859c-1.771,7.534-12.44,67.039,5.219,71.784c19.841,5.331,37.576-52.623,39.381-59.172
 								c1.463-5.326,6.582-25.465,9.719-37.845c9.578,9.226,25,15.463,40.006,15.463c28.289,0,53.73-12.73,71.637-35.843
 								c17.367-22.418,26.932-53.664,26.932-87.978C276.869,77.502,265.349,51.056,245.265,31.772z"/>
-						</g<g</g<g</g<g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></g>
+						</g>
 						</svg>
 					</a>
 				</li>
 							
 				<li class="social-section__network">
 					<a class="social-section__network-link" href="#0">
-						<svg class="social-section__network-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+						<svg class="social-section__network-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 							viewBox="0 0 310 310" style="enable-background:new 0 0 310 310;" xml:space="preserve">
 						<g id="XMLID_828_">
 							<path id="XMLID_829_" d="M249.775,236.928c-1.613-0.873-3.58-0.789-5.119,0.221c-14.15,9.295-28.469,14.007-42.557,14.007
@@ -874,6 +850,7 @@
 								c3.158,7.955,8.83,15.496,16.863,22.418c7.922,6.801,17.568,12.104,28.67,15.758c10.971,3.618,23.73,5.452,37.922,5.452
 								c12.416,0,24.141-1.269,34.85-3.772c10.73-2.514,22.779-6.91,35.811-13.065c1.75-0.826,2.865-2.587,2.865-4.521v-47.314
 								C252.402,239.49,251.395,237.8,249.775,236.928z"/>
+						</g>
 						</svg>
 					</a>
 				</li>
@@ -881,6 +858,9 @@
 		</section>	
 
 		<section class="copyright-section">
+			<h2 class="_hidden">
+				Копирайт
+			</h2>
 			<a class="copyright-section__text" href="#0">
 				Copyright © 2009–2019 City Blog LLC.
 			</a>
