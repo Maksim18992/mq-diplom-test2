@@ -353,6 +353,10 @@ address {
     width: 100%;
 }
 
+.subscribe-label{
+    display: block;
+}
+
 .subscribe-section__button {
     width: 100%;
     margin-top: 18px;
