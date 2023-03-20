@@ -2,37 +2,29 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Итоговая работа</title>
+    <title>Итоговая работа "Адаптивная и мобильная верстка"</title>
 </head>
 <body>
 
-	<section class="feedback-section">
-		<div class="feedback-section__window">
-			<div class="feedback-section__close-button">
+	<section class="popup _hidden">
+		<div class="popup__section">
+			<div class="popup__close-button">
 				<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 441 441">
 					<path fill="#fff" stroke="#000" d="M220.336 170.564l.353.353.354-.353L390.288 1.318l49.796 49.773-169.269 169.245-.353.354.353.354 169.269 169.245-49.796 49.796-169.245-169.269-.354-.353-.353.353-169.27 169.269-49.748-49.796 169.245-169.245.353-.354-.353-.354L1.318 51.067 51.09 1.318l169.246 169.246z"/>
 				</svg>
-				<span class="_hidden">
-					закрыть
-				</span>
 			</div>
-
-			<h2 class="feedback-section__title section-title">
+			<h2 class="popup__title section-title">
 				Ваш фидбек
 			</h2>
-
 				<form action="">
-
-				<label for="feedback-section__select-user-frequency">
-					<p class="feedback-section__text">
+				<label for="popup__select-user-frequency">
+					<p class="popup__text">
 						Как часто вы заходите на сайт?
 					</p>
 				</label>
-
-				<select class="feedback-section__select-user-frequency input-field" name="user-frequency" id="feedback-section__select-user-frequency">
+				<select class="popup__select-user-frequency input-field" name="user-frequency" id="popup__select-user-frequency">
 					<option value="1">
 						Почти каждый день
 					</option>
@@ -46,93 +38,73 @@
 						Несколько раз в год
 					</option>
 				</select>
-
-
-				<p class="feedback-section__text">
+				<p class="popup__text">
 					Вы подписаны на e-mail рассылку?
 				</p>
-				
-				<div class="feedback-section__radio-wrapper">
-					<input class="feedback-section__radio _hidden" type="radio" value="yes" name="subscribe-radio" id="feedback-section__radio_yes" checked>
-					<label class="feedback-section__radio-label" for="feedback-section__radio_yes">
+				<div class="popup__radio-wrapper">
+					<input class="popup__radio _hidden" type="radio" value="yes" name="subscribe-radio" id="popup__radio_yes" checked>
+					<label class="popup__radio-label" for="popup__radio_yes">
 						Да
 					</label>
-					<input class="feedback-section__radio _hidden" type="radio" value="no" name="subscribe-radio" id="feedback-section__radio_no">
-					<label class="feedback-section__radio-label" for="feedback-section__radio_no">
+					<input class="popup__radio _hidden" type="radio" value="no" name="subscribe-radio" id="popup__radio_no">
+					<label class="popup__radio-label" for="popup__radio_no">
 						Нет
 					</label>
 				</div>
-
-
-				<p class="feedback-section__text">
+				<p class="popup__text">
 					Расскажите, какой контент вы хотели бы видеть на нашем сайте?
 				</p>
-
-				<textarea class="feedback-section__opinion input-field" name="opinion" id="feedback-section__opinion" placeholder="Может, больше рецептов?"></textarea>
-
-				<button class="feedback-section__submit-button button" type="submit">
-					<span class="feedback-section__submit-button-text button-text">
+				<textarea class="popup__comment input-field" name="comment" id="popup__comment" placeholder="Может, больше рецептов?"></textarea>
+				<button class="popup__submit-button button" type="submit">
+					<span class="popup__submit-button-text button-text">
 						отправить
 					</span>
 				</button>
-
 			</form>
-
 		</div>
-
 	</section>
 
     <header class="header-section">
 		<div class="header-section__content content">
 			<div class="header-section__top">
 				<a class="header-section__logo" href="#0">
-					<span class="_hidden">
-						noemi logo
-					</span>
 				</a>
-
 				<nav class="header-section__menu">
                     <div class="menu-burger__header">
                         <span></span>
                     </div>
-                    <div class="header-section__menu-list-container_hidden">
-                        <ul class="header-section__menu-list list_no-style">
-                            <li class="header-section__menu-item header-section__menu-item_first">
-                                <a class="header-section__menu-item-link header-section__menu-item-link_hidden" href="#0">
+                    <div class="header-section__menu-list-container">
+                        <ul class="header-section__menu-list">
+                            <li class="header-section__menu-item">
+                                <a class="header-section__menu-item-link" href="#0">
                                     главная
                                 </a>
                             </li>
-
                             <li class="header-section__menu-item">
-                                <a class="header-section__menu-item-link header-section__menu-item-link_hidden" href="#0">
+                                <a class="header-section__menu-item-link" href="#0">
                                     посты
                                 </a>
                             </li>
-
                             <li class="header-section__menu-item">
-                                <a class="header-section__menu-item-link header-section__menu-item-link_hidden" href="#0">
+                                <a class="header-section__menu-item-link" href="#0">
                                     статьи
                                 </a>
                             </li>
-
                             <li class="header-section__menu-item">
-                                <a class="header-section__menu-item-link header-section__menu-item-link_hidden" href="#0">
+                                <a class="header-section__menu-item-link" href="#0">
                                     теги
                                 </a>
                             </li>
-
                             <li class="header-section__menu-item">
-                                <a class="header-section__menu-item-link header-section__menu-item-link_hidden" href="#0">
+                                <a class="header-section__menu-item-link" href="#0">
                                     темы
                                 </a>
                             </li>
-
                             <li class="header-section__menu-item">
-                                <a class="header-section__menu-item-link header-section__menu-item-link_hidden" href="#0">
+                                <a class="header-section__menu-item-link" href="#0">
                                     контакты
                                 </a>
                             </li>
-
                         </ul>
                     </div>
 				</nav>
@@ -151,50 +123,41 @@
 		<h2 class="trends-section__title section-title">
 			Сейчас в тренде
 		</h2>
-
-		<div class="trends-section__articles list_no-style">
-
+		<div class="trends-section__articles">
 			<article class="trends-section__articles-item">
 				<div class="trends-section__article" id="trends-section__article-1">
                     <div class="trends-section__article-substance">
-                        <ul class="trends-section__article-categories list_no-style article-categories">
+                        <ul class="trends-section__article-categories  article-categories">
                             <li class="trends-section__article-categories-item article-categories-item">
-                                <a class="trends-section__article-categories-item-link article-categories-item-link article-tag-link" href="#0">
+                                <a class="trends-section__article-categories-item-link article-tag-link" href="#0">
                                     lifestyle
                                 </a>
                             </li>
-
                             <li class="trends-section__article-categories-item article-categories-item">
-                                <a class="trends-section__article-categories-item-link article-categories-item-link article-tag-link" href="#0">
+                                <a class="trends-section__article-categories-item-link article-tag-link" href="#0">
                                     interior
                                 </a>
                             </li>
                         </ul>
-                        <a class="trends-section__article-title article-title-wrapper-link article-title-wrapper-link" href="#0">
+                        <a class="trends-section__article-title article-title-wrapper-link" href="#0">
                             <h3 class="trends-section__article-title article-title">
-                                Сейчас в тренде: сад<br> 
-                                на подоконнике
+                                Сейчас в тренде: сад на подоконнике
                             </h3>
                         </a>
                     </div>
 				</div>
-			</article>
-
-			
+			</article>		
 			<article class="trends-section__articles-item">
 				<div class="trends-section__article" id="trends-section__article-2">
 					<div class="trends-section__article-substance">
-						<ul class="trends-section__article-categories list_no-style article-categories">
-
+						<ul class="trends-section__article-categories  article-categories">
 							<li class="trends-section__article-categories-item article-categories-item">
-								<a class="trends-section__article-categories-item-link article-categories-item-link article-tag-link" href="#0">
+								<a class="trends-section__article-categories-item-link article-tag-link" href="#0">
 									food
 								</a>
 							</li>
-
 						</ul>
-
-						<a class="trends-section__article-title article-title-wrapper-link article-title-wrapper-link" href="#0">
+						<a class="trends-section__article-title article-title-wrapper-link" href="#0">
 							<h3 class="trends-section__article-title article-title">
 								Сыры на красивых картинках из интернета: какие они на вкус?
 							</h3>
@@ -202,28 +165,22 @@
 					</div>
 				</div>
 			</article>
-
-
 			<article class="trends-section__articles-item">
 				<div class="trends-section__article" id="trends-section__article-3">
 					<div class="trends-section__article-substance">
-						<ul class="trends-section__article-categories list_no-style article-categories">
-
+						<ul class="trends-section__article-categories  article-categories">
 							<li class="trends-section__article-categories-item article-categories-item">
-								<a class="trends-section__article-categories-item-link article-categories-item-link article-tag-link" href="#0">
+								<a class="trends-section__article-categories-item-link article-tag-link" href="#0">
 									lifestyle
 								</a>
 							</li>
-
 							<li class="trends-section__article-categories-item article-categories-item">
-								<a class="trends-section__article-categories-item-link article-categories-item-link article-tag-link" href="#0">
+								<a class="trends-section__article-categories-item-link article-tag-link" href="#0">
 									travel
 								</a>
 							</li>
-
 						</ul>
-
-						<a class="trends-section__article-title article-title-wrapper-link article-title-wrapper-link" href="#0">
+						<a class="trends-section__article-title  article-title-wrapper-link" href="#0">
 							<h3 class="trends-section__article-title article-title">
 								Собираемся в первый поход в горы
 							</h3>
@@ -232,27 +189,22 @@
 				</div>
 			</article>
 
-
 			<article class="trends-section__articles-item">
 				<div class="trends-section__article" id="trends-section__article-4">
 					<div class="trends-section__article-substance">
-						<ul class="trends-section__article-categories list_no-style article-categories">
-
+						<ul class="trends-section__article-categories  article-categories">
 							<li class="trends-section__article-categories-item article-categories-item">
-								<a class="trends-section__article-categories-item-link article-categories-item-link article-tag-link" href="#0">
+								<a class="trends-section__article-categories-item-link article-tag-link" href="#0">
 									food
 								</a>
 							</li>
-
 							<li class="trends-section__article-categories-item article-categories-item">
-								<a class="trends-section__article-categories-item-link article-categories-item-link article-tag-link" href="#0">
+								<a class="trends-section__article-categories-item-link article-tag-link" href="#0">
 									health
 								</a>
 							</li>
-
 						</ul>
-
-						<a class="trends-section__article-title article-title-wrapper-link article-title-wrapper-link" href="#0">
+						<a class="trends-section__article-title article-title-wrapper-link" href="#0">
 							<h3 class="trends-section__article-title article-title">
 								Сейчас в тренде: сколько витамина С в лимонах?
 							</h3>
@@ -263,48 +215,37 @@
 		</div>
 	</section>
 
-	<div class="union content"> 
-		
-		<div class="main-bar">
+	<div class="main content"> 		
+
+		<main class="main-bar">
 			<section class="posts-section">
-				<!-- <h2 class="_hidden">
-					Лучшие посты
-				</h2> -->
-				<ul class="posts-section__posts list_no-style">
-
-					<li class="posts-section__post posts-section__post_first">
+				<ul class="posts-section__posts ">
+					<li class="posts-section__post">
 						<article class="posts-section__article expanded-article">
-
 							<div class="expanded-article__image-wrapper">
 								<img class="expanded-article__image image" src="img/last-post1.jpg" alt="Прогулка на рассвете">
 							</div>
-
 							<div class="expanded-article__content">
 								<header class="expanded-article__header">
 									<div class="expanded-article__categories">
-										<ul class="list_no-style article-categories">
-
+										<ul class=" article-categories">
 											<li class="article-categories-item">
-												<a class="article-categories-item-link article-tag-link" href="#0">
+												<a class="article-tag-link" href="#0">
 													food
 												</a>
 											</li>
-
 											<li class="article-categories-item">
-												<a class="article-categories-item-link article-tag-link" href="#0">
+												<a class="article-tag-link" href="#0">
 													health
 												</a>
 											</li>
-
 										</ul>
 									</div>
-
 									<a class="expanded-article__title-wrapper article-title-wrapper-link" href="#0">
 										<h3 class="expanded-article__title article-title">
 											10 мест, ради которых стоит проснуться на рассвете
 										</h3>
 									</a>
-
 									<div class="expanded-article__info">
 										<time class="expanded-article__date">
 											10 июня 2019
@@ -313,7 +254,6 @@
 											Неизвестный автор
 										</span>
 									</div>
-
 								</header>
 								<div class="expanded-article__text">
 									<p>
@@ -323,40 +263,32 @@
 							</div>
 						</article>
 					</li>
-
 					<li class="posts-section__post">
 						<article class="posts-section__article expanded-article">
-
 							<div class="expanded-article__image-wrapper">
 								<img class="expanded-article__image image" src="img/last-post2.jpg" alt="Девушка занимается йогой">
 							</div>
-
 							<div class="expanded-article__content">
 								<header class="expanded-article__header">
 									<div class="expanded-article__categories">
-										<ul class="list_no-style article-categories">
-
+										<ul class=" article-categories">
 											<li class="article-categories-item">
-												<a class="article-categories-item-link article-tag-link" href="#0">
+												<a class="article-tag-link" href="#0">
 													health	
 												</a>
 											</li>
-
 											<li class="article-categories-item">
-												<a class="article-categories-item-link article-tag-link" href="#0">
+												<a class="article-tag-link" href="#0">
 													lifestyle
 												</a>
 											</li>
-
 										</ul>
 									</div>
-
 									<a class="expanded-article__title-wrapper article-title-wrapper-link" href="#0">
 										<h3 class="expanded-article__title article-title">
 											Йога для начинающих в домашних условиях
 										</h3>
 									</a>
-
 									<div class="expanded-article__info">
 										<time class="expanded-article__date">
 											10 июня 2019
@@ -365,7 +297,6 @@
 											Неизвестный автор
 										</span>
 									</div>
-
 								</header>
 								<div class="expanded-article__text">
 									<p>
@@ -375,34 +306,27 @@
 							</div>
 						</article>
 					</li>
-
 					<li class="posts-section__post">
 						<article class="posts-section__article expanded-article">
-
 							<div class="expanded-article__image-wrapper">
 								<img class="expanded-article__image image" src="img/last-post3.jpg" alt="Девушка на рок концерте">
 							</div>
-
 							<div class="expanded-article__content">
 								<header class="expanded-article__header">
 									<div class="expanded-article__categories">
-										<ul class="list_no-style article-categories">
-
+										<ul class=" article-categories">
 											<li class="article-categories-item">
-												<a class="article-categories-item-link article-tag-link" href="#0">
+												<a class="article-tag-link" href="#0">
 													music
 												</a>
 											</li>
-
 										</ul>
 									</div>
-
 									<a class="expanded-article__title-wrapper article-title-wrapper-link" href="#0">
 										<h3 class="expanded-article__title article-title">
 											Лучшие музыкальные фестивали этого лета
 										</h3>
 									</a>
-
 									<div class="expanded-article__info">
 										<time class="expanded-article__date">
 											10 июня 2019
@@ -411,53 +335,44 @@
 											Неизвестный автор
 										</span>
 									</div>
-
 								</header>
 								<div class="expanded-article__text">
 									<p>
 										Лето на носу, а с ним и музыкальные фестивали. На каком же из них вы разобьёте свою палатку?
 									</p>
-									<p class="expanded-article__text-paragraph_not-first">
+									<p>
 										Мы составили список лучших летних фестивалей по всему миру.
 									</p>
 								</div>
 							</div>
 						</article>
 					</li>
-
 					<li class="posts-section__post">
 						<article class="posts-section__article expanded-article">
-
 							<div class="expanded-article__image-wrapper">
 								<img class="expanded-article__image image" src="img/last-post4.jpg" alt="Еда на столе">
 							</div>
-
 							<div class="expanded-article__content">
 								<header class="expanded-article__header">
 									<div class="expanded-article__categories">
-										<ul class="list_no-style article-categories">
-
+										<ul class=" article-categories">
 											<li class="article-categories-item">
-												<a class="article-categories-item-link article-tag-link" href="#0">
+												<a class="article-tag-link" href="#0">
 													lifestyle
 												</a>
 											</li>
-
 											<li class="article-categories-item">
-												<a class="article-categories-item-link article-tag-link" href="#0">
+												<a class="article-tag-link" href="#0">
 													food
 												</a>
 											</li>
-
 										</ul>
 									</div>
-
 									<a class="expanded-article__title-wrapper article-title-wrapper-link" href="#0">
 										<h3 class="expanded-article__title article-title">
 											Наукоёмкий подход к кулинарии
 										</h3>
 									</a>
-
 									<div class="expanded-article__info">
 										<time class="expanded-article__date">
 											10 июня 2019
@@ -466,7 +381,6 @@
 											Неизвестный автор
 										</span>
 									</div>
-
 								</header>
 								<div class="expanded-article__text">
 									<p>
@@ -476,46 +390,37 @@
 							</div>
 						</article>
 					</li>
-
 					<li class="posts-section__post">
 						<article class="posts-section__article expanded-article">
-
 							<div class="expanded-article__image-wrapper">
 								<img class="expanded-article__image image" src="img/last-post5.jpg" alt="Подушка с принтом">
 							</div>
-
 							<div class="expanded-article__content">
 								<header class="expanded-article__header">
 									<div class="expanded-article__categories">
-										<ul class="list_no-style article-categories">
-
+										<ul class=" article-categories">
 											<li class="article-categories-item">
-												<a class="article-categories-item-link article-tag-link" href="#0">
+												<a class="article-tag-link" href="#0">
 													lifestyle
 												</a>
 											</li>
-
 											<li class="article-categories-item">
-												<a class="article-categories-item-link article-tag-link" href="#0">
+												<a class="article-tag-link" href="#0">
 													interior
 												</a>
 											</li>
-
 											<li class="article-categories-item">
-												<a class="article-categories-item-link article-tag-link" href="#0">
+												<a class="article-tag-link" href="#0">
 													art
 												</a>
 											</li>
-
 										</ul>
 									</div>
-
 									<a class="expanded-article__title-wrapper article-title-wrapper-link" href="#0">
 										<h3 class="expanded-article__title article-title">
 											 Делаем модные принты на подушках для интерьера 
 										</h3>
 									</a>
-
 									<div class="expanded-article__info">
 										<time class="expanded-article__date">
 											10 июня 2019
@@ -524,7 +429,6 @@
 											Неизвестный автор
 										</span>
 									</div>
-
 								</header>
 								<div class="expanded-article__text">
 									<p>
@@ -534,66 +438,55 @@
 							</div>
 						</article>
 					</li>
-
 				</ul>
 			</section>
-		</div>
+		</main>
 
-
-		<div class="aside-bar">
-
-			<section class="latest-posts-section aside-bar__section aside-bar__section_first">
+		<aside class="aside-bar">
+			<section class="latest-posts-section aside-bar__section">
 				<h2 class="latest-posts-section__title section-title section-title_aside">
 					Новые посты
 				</h2>
-				<ul class="latest-posts-section__posts list_no-style">
-
-					<li class="latest-posts-section__post latest-posts-section__post_first">
+				<ul class="latest-posts-section__posts">
+					<li class="latest-posts-section__post">
 						<article class="minimized-article">
 							<div class="minimized-article__image-wrapper">
 								<img class="minimized-article__image image" src="img/2.jpg" alt="Прогулка на рассвете">
 							</div>
-
 							<div class="minimized-article__content">
 								<div class="minimized-article__info">
 									<time class="minimized-article__date">
 										14 июня 2019
 									</time>
-								</div>
-								
+								</div>			
 								<h3 class="minimized-article__title">
 									<a href="#0" class="article-title-wrapper-link">10 мест, ради которых стоит проснуться</a>
 								</h3>
 							</div>
 						</article>
 					</li>
-
 					<li class="latest-posts-section__post">
 						<article class="minimized-article">
 							<div class="minimized-article__image-wrapper">
 								<img class="minimized-article__image image" src="img/151.jpg" alt="Девушка занимается йогой на берегу моря">
 							</div>
-
 							<div class="minimized-article__content">
 								<div class="minimized-article__info">
 									<time class="minimized-article__date">
 										14 июня 2019
 									</time>
 								</div>
-
 								<h3 class="minimized-article__title">
 									<a href="#0" class="article-title-wrapper-link">Йога для домашних</a>
 								</h3>
 							</div>
 						</article>
 					</li>
-
 					<li class="latest-posts-section__post">
 						<article class="minimized-article">
 							<div class="minimized-article__image-wrapper">
 								<img class="minimized-article__image image" src="img/45.jpg" alt="Красивый балкон">
 							</div>
-
 							<div class="minimized-article__content">
 								<div class="minimized-article__info">
 									<time class="minimized-article__date">
@@ -607,40 +500,34 @@
 							</div>
 						</article>
 					</li>
-
 					<li class="latest-posts-section__post">
 						<article class="minimized-article">
 							<div class="minimized-article__image-wrapper">
 								<img class="minimized-article__image image" src="img/501.jpg" alt="Еда на столе">
 							</div>
-
 							<div class="minimized-article__content">
 								<div class="minimized-article__info">
 									<time class="minimized-article__date">
 										14 июня 2019
 									</time>
 								</div>
-
 								<h3 class="minimized-article__title">
 									<a href="#0" class="article-title-wrapper-link">Кулинарный подход к науке</a>
 								</h3>
 							</div>
 						</article>
 					</li>
-
 					<li class="latest-posts-section__post">
 						<article class="minimized-article">
 							<div class="minimized-article__image-wrapper">
 								<img class="minimized-article__image image" src="img/7.jpg" alt="3 девушки с причёсками с распущенными волосами">
 							</div>
-
 							<div class="minimized-article__content">
 								<div class="minimized-article__info">
 									<time class="minimized-article__date">
 										14 июня 2019
 									</time>
 								</div>
-
 								<h3 class="minimized-article__title">
 									<a href="#0" class="article-title-wrapper-link">Лучшие прически для распущенных волос</a>
 								</h3>
@@ -650,29 +537,19 @@
 
 				</ul>
 			</section>
-
 			<section class="search-section aside-bar__section">
-				<h2 class="_hidden">
-					Поиск
-				</h2>
-
 				<form class="search-section__form" action="">
 					<input class="search-section__field input-field" type="search" placeholder="Найти..." name="search" required>
 					<button class="search-section__button button" type="submit">
-						<span class="_hidden">
-							поиск
-						</span>
 					</button>
 				</form>
 			</section>
-
 			<section class="subscribe-section aside-bar__section">
 				<label for="subscribe-section__field">
 					<h2 class="subscribe-section__title section-title section-title_aside">
 						Рассылка
 					</h2>
 				</label>
-
 				<form class="subscribe-section__form" action="">
 					<input class="subscribe-section__field aside-bar__form-field input-field" id="subscribe-section__field" type="email" placeholder="Ваш email-адрес" name="email" required>
 					<button class="subscribe-section__button button" type="submit">
@@ -682,14 +559,11 @@
 					</button>
 				</form>
 			</section>
-
 			<section class="categories-section aside-bar__section">
 				<h2 class="categories-section__title section-title section-title_aside">
 					Теги
-				</h2>
-				
-				<ul class="categories-section__categories list_no-style">
-
+				</h2>	
+				<ul class="categories-section__categories ">
 					<li class="categories-section__category">
 						<a class="categories-section__category-button" href="#0">
 							<span class="categories-section__category-text">
@@ -697,7 +571,6 @@
 							</span>
 						</a>
 					</li>
-
 					<li class="categories-section__category">
 						<a class="categories-section__category-button" href="#0">
 							<span class="categories-section__category-text">
@@ -705,7 +578,6 @@
 							</span>
 						</a>
 					</li>
-
 					<li class="categories-section__category">
 						<a class="categories-section__category-button" href="#0">
 							<span class="categories-section__category-text">
@@ -713,7 +585,6 @@
 							</span>
 						</a>
 					</li>
-
 					<li class="categories-section__category">
 						<a class="categories-section__category-button" href="#0">
 							<span class="categories-section__category-text">
@@ -721,7 +592,6 @@
 							</span>
 						</a>
 					</li>
-
 					<li class="categories-section__category">
 						<a class="categories-section__category-button" href="#0">
 							<span class="categories-section__category-text">
@@ -729,7 +599,6 @@
 							</span>
 						</a>
 					</li>
-
 					<li class="categories-section__category">
 						<a class="categories-section__category-button" href="#0">
 							<span class="categories-section__category-text">
@@ -737,7 +606,6 @@
 							</span>
 						</a>
 					</li>
-
 					<li class="categories-section__category">
 						<a class="categories-section__category-button" href="#0">
 							<span class="categories-section__category-text">
@@ -745,7 +613,6 @@
 							</span>
 						</a>
 					</li>
-
 					<li class="categories-section__category">
 						<a class="categories-section__category-button" href="#0">
 							<span class="categories-section__category-text">
@@ -753,16 +620,13 @@
 							</span>
 						</a>
 					</li>
-
 				</ul>
 			</section>
-
 			<section class="topics-section aside-bar__section">
 				<h2 class="topics-section__title section-title section-title_aside">
 					Темы
 				</h2>
-
-				<ul class="topics-section__topics list_no-style">
+				<ul class="topics-section__topics ">
 
 					<li class="topics-section__topic">
 						<a class="topics-section__link" href="#0">
@@ -774,7 +638,6 @@
 							</span>
 						</a>
 					</li>
-
 					<li class="topics-section__topic">
 						<a class="topics-section__link" href="#0">
 							<span class="topics-section__text">
@@ -785,7 +648,6 @@
 							</span>
 						</a>
 					</li>
-
 					<li class="topics-section__topic">
 						<a class="topics-section__link" href="#0">
 							<span class="topics-section__text">
@@ -796,7 +658,6 @@
 							</span>
 						</a>
 					</li>
-
 					<li class="topics-section__topic">
 						<a class="topics-section__link" href="#0">
 							<span class="topics-section__text">
@@ -807,7 +668,6 @@
 							</span>
 						</a>
 					</li>
-
 					<li class="topics-section__topic">
 						<a class="topics-section__link" href="#0">
 							<span class="topics-section__text">
@@ -818,7 +678,6 @@
 							</span>
 						</a>
 					</li>
-
 					<li class="topics-section__topic">
 						<a class="topics-section__link" href="#0">
 							<span class="topics-section__text">
@@ -829,11 +688,9 @@
 							</span>
 						</a>
 					</li>
-
 				</ul>
 			</section>
-
-		</div>
+		</aside>
 
 	</div>
 
@@ -841,9 +698,7 @@
 		<h2 class="shop-section__title section-title">
 			Наши изделия
 		</h2>
-
-		<ul class="shop-section__goods list_no-style">
-
+		<ul class="shop-section__goods ">
 			<li class="shop-section__goods-item">
 				<article class="shop-section__product product">
 					<div class="product__image-wrapper">
@@ -854,19 +709,16 @@
 							<img class="product__image image" src="img/shop-item-desk1.jpg" alt="Подушка с принтом">
 						</picture>
 					</div>
-
 					<div class="product__content">
 						<header class="product__title">
 							Подушка на диван
 						</header>
-
 						<p class="product__text">
 							Набор из двух подушек с модными принтами. Видео о создании 
 							<a class="product__text-link" href="#0">
 								здесь
 					 	</a>
 						</p>
-
 						<footer class="product__footer">
 							<div class="product__prices">
 								<span class="product__old-price">
@@ -876,7 +728,6 @@
 									800 ₽
 								</span>
 							</div>
-
 							<a class="product__button" href="#0">
 								<span class="product__button-text">
 									в магазин
@@ -972,18 +823,13 @@
 					</div>
 				</article>
 			</li>
-
 		</ul>
 	</section>
 
 	<footer class="site-footer content">
-		<section class="site-footer__social-section social-section">
-			<h2 class="_hidden">
-				Социальные сети
-			</h2>
-			<ul class="social-section__networks list_no-style">
-
-				<li class="social-section__network social-section__network_first">
+		<section class="social-section">
+			<ul class="social-section__networks">
+				<li class="social-section__network">
 					<a class="social-section__network-link" href="#0">
 						<svg class="social-section__network-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
 							<g fill="none" fill-rule="evenodd" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" transform="translate(1 1)">
@@ -992,9 +838,6 @@
 							  <path d="M.201 8.0853c3.4904.1103 6.5893-.4006 9.2966-1.5327C12.257 5.399 14.191 4.1147 15.3 2.7M3.6 15.3c1.8876-3.0496 4.9253-4.963 7.4854-5.748 2.8247-.866 4.3048-.6496 6.9146.2087"/>
 							</g>
 						  </svg>
-						<span class="_hidden">
-							dribbble
-						</span>
 					</a>
 				</li>
 
@@ -1015,15 +858,11 @@
 								c17.367-22.418,26.932-53.664,26.932-87.978C276.869,77.502,265.349,51.056,245.265,31.772z"/>
 						</g<g</g<g</g<g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></g>
 						</svg>
-						<span class="_hidden">
-							pinterest
-						</span>
 					</a>
 				</li>
 							
 				<li class="social-section__network">
 					<a class="social-section__network-link" href="#0">
-						
 						<svg class="social-section__network-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 							viewBox="0 0 310 310" style="enable-background:new 0 0 310 310;" xml:space="preserve">
 						<g id="XMLID_828_">
@@ -1036,19 +875,12 @@
 								c12.416,0,24.141-1.269,34.85-3.772c10.73-2.514,22.779-6.91,35.811-13.065c1.75-0.826,2.865-2.587,2.865-4.521v-47.314
 								C252.402,239.49,251.395,237.8,249.775,236.928z"/>
 						</svg>
-						<span class="_hidden">
-							tumblr
-						</span>
 					</a>
 				</li>
-
 			</ul>
 		</section>	
 
-		<section class="site-footer__copyright-section copyright-section">
-			<h2 class="_hidden">
-				Копирайт
-			</h2>
+		<section class="copyright-section">
 			<a class="copyright-section__text" href="#0">
 				Copyright © 2009–2019 City Blog LLC.
 			</a>
