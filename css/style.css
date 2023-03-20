@@ -22,8 +22,6 @@
 }
 /* ------------fonts-end------------*/
 
-
-/* ----------styles all start------- */
 * {
     box-sizing: border-box;
     margin: 0px;
@@ -38,7 +36,6 @@ body {
     position: relative;
     min-width: 300px;
 }
-/* ----------styles all end------- */
 
 .header-section {
     position: relative;
@@ -558,7 +555,7 @@ body {
 
 
 /**** Popup START ****/
-.feedback-section {
+.popup {
     position: fixed;
     z-index: 4;
     top: 0;
@@ -568,10 +565,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    display: none;
 }
 
-.feedback-section::before {
+.popup::before {
     content: "";
     position: absolute;
     top: 0;
@@ -582,26 +578,26 @@ body {
     background-color: #000000;
 }
 
-.feedback-section__window {
+.popup__section {
     position: absolute;
     background-color: #ffffff;
 }
 
-.feedback-section__close-button {
+.popup__close-button {
     position: absolute;
     right: 0;
 }
 
-.feedback-section__text {
+.popup__text {
     margin-top: 33px;
     margin-bottom: 11px;
 }
 
-.feedback-section__text, .feedback-section__opinion, .feedback-section__radio-label {
+.popup__text, .popup__comment, .popup__radio-label {
     font-size: 13px;
 }
 
-.feedback-section__select-user-frequency {
+.popup__select-user-frequency {
     width: 100%;
     background-position: center right 14px;
     background-repeat: no-repeat;
@@ -609,12 +605,12 @@ body {
     background-image: url(../svg/form-arrows.svg);
 }
 
-.feedback-section__radio-label {
+.popup__radio-label {
     margin-right: 15px;
     vertical-align: middle;
 }
 
-.feedback-section__radio-label::before {
+.popup__radio-label::before {
     content: "";
     display: inline-block;
     width: 26px;
@@ -627,11 +623,11 @@ body {
     background-image: url(../svg/form-empty-circle.svg);
 }
 
-.feedback-section__radio:checked + .feedback-section__radio-label::before {
+.popup__radio:checked + .popup__radio-label::before {
     background-image: url(../svg/form-circle.svg);
 }
 
-.feedback-section__opinion {
+.popup__comment {
     min-width: 100%;
     max-width: 100%;
     min-height: 131px;
@@ -639,7 +635,7 @@ body {
     padding-top: 19px;
 }
 
-.feedback-section__submit-button {
+.popup__submit-button {
     width: 100%;
     margin-top: 26px;
 }
@@ -683,7 +679,7 @@ body {
         align-self: flex-end;
     }
 
-    .header-section__menu-list-container_hidden {
+    .header-section__menu-list-container {
         display: none;
     }
 
@@ -773,20 +769,20 @@ body {
 
 
     /**** Popup START ****/
-    .feedback-section__window {
+    .popup__section{
         min-width: 330px;
         width: calc(100vw - 10%);
         max-width: 390px;
         padding: 30px 24px;
     }
 
-    .feedback-section__close-button {
+    .popup__close-button {
         top: -33px;
         width: 27px;
         height: 27px;
     }
 
-    .feedback-section__title {
+    .popup__title {
         font-size: 16px;
     }
     /**** Popup END ****/
@@ -803,7 +799,7 @@ body {
     }
 
     .trends-section, 
-    .union, 
+    .main, 
     .shop-section, 
     .site-footer {
         margin-top: 50px;
@@ -821,7 +817,7 @@ body {
         height: 40px;
     }
 
-    .header-section__menu-list-container_hidden {
+    .header-section__menu-list-container {
         display: none;
     }
 
@@ -863,7 +859,7 @@ body {
 
 /***************** MAIN-START *****************/
 
-    .union {
+    .main {
         display: flex;
         justify-content: center;
         margin-left: 35px;
@@ -958,18 +954,18 @@ body {
 
 
     /**** Popup START ****/
-    .feedback-section__window {
+    .popup__section{
         width: 390px;
         padding: 55px 30px;
     }
 
-    .feedback-section__close-button {
+    .popup__close-button {
         top: -37px;
         width: 27px;
         height: 27px;
     }
 
-    .feedback-section__title {
+    .popup__title {
         font-size: 18px;
     }
     /**** Popup END ****/
@@ -1000,7 +996,7 @@ body {
     }
 
     .trends-section, 
-    .union, 
+    .main, 
     .shop-section, 
     .site-footer {
         margin-top: 64px;
@@ -1095,7 +1091,7 @@ body {
 
 
     /***************** MAIN-START *****************/
-    .union {
+    .main {
         display: flex;
         justify-content: space-between;
     }
@@ -1188,12 +1184,12 @@ body {
 
 
     /**** Popup START ****/
-    .feedback-section__window {
+    .popup__section{
         width: 390px;
         padding: 55px 30px;
     }
 
-    .feedback-section__close-button {
+    .popup__close-button {
         top: -27px;
         width: 20px;
         height: 20px;
