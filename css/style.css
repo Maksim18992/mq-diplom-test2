@@ -37,6 +37,10 @@ body {
     min-width: 300px;
 }
 
+address {
+    font-style: normal
+}
+
 .header-section {
     position: relative;
     background-color: #10192a;
@@ -259,7 +263,9 @@ body {
 }
 
 .expanded-article__author {
+    display: inline;
     font-weight: bold;
+    font-family: "OpenSans", "Arial", sans-serif;
 }
 
 .expanded-article__categories {
